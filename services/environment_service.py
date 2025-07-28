@@ -48,6 +48,8 @@ logger = logging.getLogger(__name__)
 
 class EnvironmentService:
     def __init__(self):
+        OPENWEATHER_KEY = os.getenv("OPENWEATHER_KEY")
+        print(OPENWEATHER_KEY)  # Just for debugging
         self.openweather_key = os.getenv("OPENWEATHER_KEY")
         self.iqair_key = os.getenv("IQAIR_KEY")
 

@@ -6,7 +6,7 @@ class MoodLog(Base):
     __tablename__ = "mood_logs"
 
     id = Column(Integer, primary_key=True, index=True)
-    mood_score = Column(String, nullable=False)
+    mood_score = Column(Integer, nullable=False)
     activity = Column(String, nullable=True)
     weather = Column(String, nullable=False) # Store weather description
     air_quality = Column(Integer, nullable=False) # Store air quality index
